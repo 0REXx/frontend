@@ -1,0 +1,182 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #7d7d7d; 
+  border-radius: 15px;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #a66a3f; 
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.lists-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #d9b29c; 
+  border-radius: 8px;
+  color: #2a2a2a;
+  cursor: pointer;
+}
+
+.list-item.selected {
+  background-color: #d0e8f2; 
+  font-weight: bold;
+}
+
+.archive-button {
+  margin-left: 10px;
+  background-color: #444; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.archive-button:hover {
+  background-color: #555;
+}
+
+.main-content {
+  width: 50%;
+}
+
+.shopping-list {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f3f3f3;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.shopping-list h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.shopping-list.archived {
+  background: #e0e0e0;
+  color: #888;
+}
+
+.participant-form, .item-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.participant-form input, .item-actions button {
+  flex: 1;
+}
+
+.participant-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.shopping-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.shopping-item:last-child {
+  border-bottom: none;
+}
+
+.item-actions button {
+  background-color: #444; 
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.item-actions button:hover {
+  background-color: #555;
+}
+
+button {
+  background-color: #333; 
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+button:active {
+  background-color: #222;
+}
+
+input[type="text"] {
+  width: calc(100% - 20px); 
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.empty-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  color: #555;
+  text-align: center;
+}
+.empty-view h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.empty-view p {
+  font-size: 16px;
+  color: #777;
+}
